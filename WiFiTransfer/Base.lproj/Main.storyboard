@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WiFiTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u01-0w-Mz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="cOe-TB-ghv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-Rx-PVq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-MT-2YQ">
+                                        <rect key="frame" x="147" y="30" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="6hM-Lu-kJV"/>
+                                            <constraint firstAttribute="width" secondItem="hbI-MT-2YQ" secondAttribute="height" multiplier="1:1" id="spu-1W-Sxv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="传输地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG5-Lt-BJI">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电脑浏览器中访问传输地址，并确认手机电脑在同一WiFi网络环境下" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wde-9o-vtm">
+                                        <rect key="frame" x="10" y="186.5" width="394" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.1176470588" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sG5-Lt-BJI" firstAttribute="leading" secondItem="Ku0-Rx-PVq" secondAttribute="leading" id="Mgf-Q1-mEx"/>
+                                    <constraint firstAttribute="trailing" secondItem="wde-9o-vtm" secondAttribute="trailing" constant="10" id="R9A-hc-d7p"/>
+                                    <constraint firstItem="sG5-Lt-BJI" firstAttribute="top" secondItem="hbI-MT-2YQ" secondAttribute="bottom" constant="5" id="abm-Bd-fFR"/>
+                                    <constraint firstItem="wde-9o-vtm" firstAttribute="leading" secondItem="Ku0-Rx-PVq" secondAttribute="leading" constant="10" id="b5M-YJ-i4g"/>
+                                    <constraint firstItem="hbI-MT-2YQ" firstAttribute="centerX" secondItem="Ku0-Rx-PVq" secondAttribute="centerX" id="dFW-I6-FK8"/>
+                                    <constraint firstItem="wde-9o-vtm" firstAttribute="top" secondItem="sG5-Lt-BJI" secondAttribute="bottom" constant="10" id="ke7-g0-hk2"/>
+                                    <constraint firstItem="hbI-MT-2YQ" firstAttribute="centerY" secondItem="Ku0-Rx-PVq" secondAttribute="centerY" constant="-30" id="v6d-n9-AXQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="sG5-Lt-BJI" secondAttribute="trailing" id="yfP-29-VXG"/>
+                                    <constraint firstAttribute="height" constant="240" id="zuw-VJ-oRT"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="3" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VdK-Fw-Hbv">
+                                <rect key="frame" x="0.0" y="240" width="414" height="656"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NGJ-kE-NON"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="smF-w5-Wo2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ku0-Rx-PVq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8p7-oy-RTf"/>
+                            <constraint firstItem="Ku0-Rx-PVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BP7-gq-QN8"/>
+                            <constraint firstAttribute="trailing" secondItem="VdK-Fw-Hbv" secondAttribute="trailing" id="BjY-KB-OKr"/>
+                            <constraint firstItem="VdK-Fw-Hbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O3R-Lk-qFK"/>
+                            <constraint firstItem="VdK-Fw-Hbv" firstAttribute="top" secondItem="Ku0-Rx-PVq" secondAttribute="bottom" id="cXK-HC-0em"/>
+                            <constraint firstAttribute="bottom" secondItem="VdK-Fw-Hbv" secondAttribute="bottom" id="gza-gr-ql0"/>
+                            <constraint firstAttribute="trailing" secondItem="Ku0-Rx-PVq" secondAttribute="trailing" id="sUe-UT-mlZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ipLabel" destination="sG5-Lt-BJI" id="fbF-wg-pyf"/>
+                        <outlet property="tableView" destination="VdK-Fw-Hbv" id="xrJ-7v-hdm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wifi" width="318" height="250"/>
+    </resources>
+</document>

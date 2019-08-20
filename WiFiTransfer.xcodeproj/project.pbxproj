@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA23947A230BD945007D4F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA239479230BD945007D4F38 /* AppDelegate.swift */; };
+		DA23947C230BD945007D4F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23947B230BD945007D4F38 /* ViewController.swift */; };
+		DA23947F230BD945007D4F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA23947D230BD945007D4F38 /* Main.storyboard */; };
+		DA239481230BD946007D4F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA239480230BD946007D4F38 /* Assets.xcassets */; };
+		DA239484230BD946007D4F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA239482230BD946007D4F38 /* LaunchScreen.storyboard */; };
+		DA23948F230BD946007D4F38 /* WiFiTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23948E230BD946007D4F38 /* WiFiTransferTests.swift */; };
+		DA23949A230BD946007D4F38 /* WiFiTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA239499230BD946007D4F38 /* WiFiTransferUITests.swift */; };
+		DA2394E4230BDE22007D4F38 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2394E3230BDE22007D4F38 /* libxml2.tbd */; };
+		DA2394E6230BDE40007D4F38 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2394E5230BDE40007D4F38 /* libz.tbd */; };
+		DA239511230BDF36007D4F38 /* GCDWebDAVServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394EA230BDF36007D4F38 /* GCDWebDAVServer.m */; };
+		DA239512230BDF36007D4F38 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394EF230BDF36007D4F38 /* GCDWebServerResponse.m */; };
+		DA239513230BDF36007D4F38 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394F2230BDF36007D4F38 /* GCDWebServerRequest.m */; };
+		DA239514230BDF36007D4F38 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394F5230BDF36007D4F38 /* GCDWebServerFunctions.m */; };
+		DA239515230BDF36007D4F38 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394F6230BDF36007D4F38 /* GCDWebServer.m */; };
+		DA239516230BDF36007D4F38 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394F7230BDF36007D4F38 /* GCDWebServerConnection.m */; };
+		DA239517230BDF36007D4F38 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394FC230BDF36007D4F38 /* GCDWebServerErrorResponse.m */; };
+		DA239518230BDF36007D4F38 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394FE230BDF36007D4F38 /* GCDWebServerFileResponse.m */; };
+		DA239519230BDF36007D4F38 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2394FF230BDF36007D4F38 /* GCDWebServerDataResponse.m */; };
+		DA23951A230BDF36007D4F38 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239501230BDF36007D4F38 /* GCDWebServerStreamedResponse.m */; };
+		DA23951B230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239506230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.m */; };
+		DA23951C230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239507230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.m */; };
+		DA23951D230BDF36007D4F38 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239508230BDF36007D4F38 /* GCDWebServerDataRequest.m */; };
+		DA23951E230BDF36007D4F38 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239509230BDF36007D4F38 /* GCDWebServerFileRequest.m */; };
+		DA23951F230BDF36007D4F38 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA23950D230BDF36007D4F38 /* GCDWebUploader.bundle */; };
+		DA239520230BDF36007D4F38 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23950F230BDF36007D4F38 /* GCDWebUploader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA23948B230BD946007D4F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA23946E230BD945007D4F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA239475230BD945007D4F38;
+			remoteInfo = WiFiTransfer;
+		};
+		DA239496230BD946007D4F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA23946E230BD945007D4F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA239475230BD945007D4F38;
+			remoteInfo = WiFiTransfer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA239476230BD945007D4F38 /* WiFiTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA239479230BD945007D4F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA23947B230BD945007D4F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA23947E230BD945007D4F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA239480230BD946007D4F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA239483230BD946007D4F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA239485230BD946007D4F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA23948A230BD946007D4F38 /* WiFiTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA23948E230BD946007D4F38 /* WiFiTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiTransferTests.swift; sourceTree = "<group>"; };
+		DA239490230BD946007D4F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA239495230BD946007D4F38 /* WiFiTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA239499230BD946007D4F38 /* WiFiTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiTransferUITests.swift; sourceTree = "<group>"; };
+		DA23949B230BD946007D4F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2394E1230BDA3E007D4F38 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		DA2394E3230BDE22007D4F38 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		DA2394E5230BDE40007D4F38 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DA2394E9230BDF36007D4F38 /* GCDWebDAVServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebDAVServer.h; sourceTree = "<group>"; };
+		DA2394EA230BDF36007D4F38 /* GCDWebDAVServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebDAVServer.m; sourceTree = "<group>"; };
+		DA2394ED230BDF36007D4F38 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		DA2394EE230BDF36007D4F38 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		DA2394EF230BDF36007D4F38 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		DA2394F0230BDF36007D4F38 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		DA2394F1230BDF36007D4F38 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		DA2394F2230BDF36007D4F38 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		DA2394F3230BDF36007D4F38 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		DA2394F4230BDF36007D4F38 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		DA2394F5230BDF36007D4F38 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		DA2394F6230BDF36007D4F38 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		DA2394F7230BDF36007D4F38 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		DA2394F8230BDF36007D4F38 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		DA2394FA230BDF36007D4F38 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		DA2394FB230BDF36007D4F38 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		DA2394FC230BDF36007D4F38 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		DA2394FD230BDF36007D4F38 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		DA2394FE230BDF36007D4F38 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		DA2394FF230BDF36007D4F38 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		DA239500230BDF36007D4F38 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		DA239501230BDF36007D4F38 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		DA239503230BDF36007D4F38 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		DA239504230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		DA239505230BDF36007D4F38 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		DA239506230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		DA239507230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		DA239508230BDF36007D4F38 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		DA239509230BDF36007D4F38 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		DA23950A230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		DA23950D230BDF36007D4F38 /* GCDWebUploader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GCDWebUploader.bundle; sourceTree = "<group>"; };
+		DA23950E230BDF36007D4F38 /* GCDWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebUploader.h; sourceTree = "<group>"; };
+		DA23950F230BDF36007D4F38 /* GCDWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebUploader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA239473230BD945007D4F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2394E6230BDE40007D4F38 /* libz.tbd in Frameworks */,
+				DA2394E4230BDE22007D4F38 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239487230BD946007D4F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239492230BD946007D4F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA23946D230BD945007D4F38 = {
+			isa = PBXGroup;
+			children = (
+				DA239478230BD945007D4F38 /* WiFiTransfer */,
+				DA23948D230BD946007D4F38 /* WiFiTransferTests */,
+				DA239498230BD946007D4F38 /* WiFiTransferUITests */,
+				DA239477230BD945007D4F38 /* Products */,
+				DA2394E2230BDE22007D4F38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA239477230BD945007D4F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA239476230BD945007D4F38 /* WiFiTransfer.app */,
+				DA23948A230BD946007D4F38 /* WiFiTransferTests.xctest */,
+				DA239495230BD946007D4F38 /* WiFiTransferUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA239478230BD945007D4F38 /* WiFiTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394E7230BDF36007D4F38 /* Framework */,
+				DA239479230BD945007D4F38 /* AppDelegate.swift */,
+				DA23947B230BD945007D4F38 /* ViewController.swift */,
+				DA23947D230BD945007D4F38 /* Main.storyboard */,
+				DA239480230BD946007D4F38 /* Assets.xcassets */,
+				DA239482230BD946007D4F38 /* LaunchScreen.storyboard */,
+				DA239485230BD946007D4F38 /* Info.plist */,
+				DA2394E1230BDA3E007D4F38 /* bridge.h */,
+			);
+			path = WiFiTransfer;
+			sourceTree = "<group>";
+		};
+		DA23948D230BD946007D4F38 /* WiFiTransferTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA23948E230BD946007D4F38 /* WiFiTransferTests.swift */,
+				DA239490230BD946007D4F38 /* Info.plist */,
+			);
+			path = WiFiTransferTests;
+			sourceTree = "<group>";
+		};
+		DA239498230BD946007D4F38 /* WiFiTransferUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA239499230BD946007D4F38 /* WiFiTransferUITests.swift */,
+				DA23949B230BD946007D4F38 /* Info.plist */,
+			);
+			path = WiFiTransferUITests;
+			sourceTree = "<group>";
+		};
+		DA2394E2230BDE22007D4F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394E5230BDE40007D4F38 /* libz.tbd */,
+				DA2394E3230BDE22007D4F38 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA2394E7230BDF36007D4F38 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394E8230BDF36007D4F38 /* GCDWebDAVServer */,
+				DA2394EB230BDF36007D4F38 /* GCDWebServer */,
+				DA23950C230BDF36007D4F38 /* GCDWebUploader */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		DA2394E8230BDF36007D4F38 /* GCDWebDAVServer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394E9230BDF36007D4F38 /* GCDWebDAVServer.h */,
+				DA2394EA230BDF36007D4F38 /* GCDWebDAVServer.m */,
+			);
+			path = GCDWebDAVServer;
+			sourceTree = "<group>";
+		};
+		DA2394EB230BDF36007D4F38 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394EC230BDF36007D4F38 /* Core */,
+				DA2394F9230BDF36007D4F38 /* Responses */,
+				DA239502230BDF36007D4F38 /* Requests */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		DA2394EC230BDF36007D4F38 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394ED230BDF36007D4F38 /* GCDWebServerFunctions.h */,
+				DA2394EE230BDF36007D4F38 /* GCDWebServerPrivate.h */,
+				DA2394EF230BDF36007D4F38 /* GCDWebServerResponse.m */,
+				DA2394F0230BDF36007D4F38 /* GCDWebServerConnection.h */,
+				DA2394F1230BDF36007D4F38 /* GCDWebServer.h */,
+				DA2394F2230BDF36007D4F38 /* GCDWebServerRequest.m */,
+				DA2394F3230BDF36007D4F38 /* GCDWebServerHTTPStatusCodes.h */,
+				DA2394F4230BDF36007D4F38 /* GCDWebServerResponse.h */,
+				DA2394F5230BDF36007D4F38 /* GCDWebServerFunctions.m */,
+				DA2394F6230BDF36007D4F38 /* GCDWebServer.m */,
+				DA2394F7230BDF36007D4F38 /* GCDWebServerConnection.m */,
+				DA2394F8230BDF36007D4F38 /* GCDWebServerRequest.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DA2394F9230BDF36007D4F38 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				DA2394FA230BDF36007D4F38 /* GCDWebServerFileResponse.h */,
+				DA2394FB230BDF36007D4F38 /* GCDWebServerStreamedResponse.h */,
+				DA2394FC230BDF36007D4F38 /* GCDWebServerErrorResponse.m */,
+				DA2394FD230BDF36007D4F38 /* GCDWebServerDataResponse.h */,
+				DA2394FE230BDF36007D4F38 /* GCDWebServerFileResponse.m */,
+				DA2394FF230BDF36007D4F38 /* GCDWebServerDataResponse.m */,
+				DA239500230BDF36007D4F38 /* GCDWebServerErrorResponse.h */,
+				DA239501230BDF36007D4F38 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		DA239502230BDF36007D4F38 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				DA239503230BDF36007D4F38 /* GCDWebServerDataRequest.h */,
+				DA239504230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.h */,
+				DA239505230BDF36007D4F38 /* GCDWebServerFileRequest.h */,
+				DA239506230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.m */,
+				DA239507230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.m */,
+				DA239508230BDF36007D4F38 /* GCDWebServerDataRequest.m */,
+				DA239509230BDF36007D4F38 /* GCDWebServerFileRequest.m */,
+				DA23950A230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.h */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		DA23950C230BDF36007D4F38 /* GCDWebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				DA23950D230BDF36007D4F38 /* GCDWebUploader.bundle */,
+				DA23950E230BDF36007D4F38 /* GCDWebUploader.h */,
+				DA23950F230BDF36007D4F38 /* GCDWebUploader.m */,
+			);
+			path = GCDWebUploader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA239475230BD945007D4F38 /* WiFiTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA23949E230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransfer" */;
+			buildPhases = (
+				DA239472230BD945007D4F38 /* Sources */,
+				DA239473230BD945007D4F38 /* Frameworks */,
+				DA239474230BD945007D4F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiTransfer;
+			productName = WiFiTransfer;
+			productReference = DA239476230BD945007D4F38 /* WiFiTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA239489230BD946007D4F38 /* WiFiTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2394A1230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransferTests" */;
+			buildPhases = (
+				DA239486230BD946007D4F38 /* Sources */,
+				DA239487230BD946007D4F38 /* Frameworks */,
+				DA239488230BD946007D4F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA23948C230BD946007D4F38 /* PBXTargetDependency */,
+			);
+			name = WiFiTransferTests;
+			productName = WiFiTransferTests;
+			productReference = DA23948A230BD946007D4F38 /* WiFiTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA239494230BD946007D4F38 /* WiFiTransferUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2394A4230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransferUITests" */;
+			buildPhases = (
+				DA239491230BD946007D4F38 /* Sources */,
+				DA239492230BD946007D4F38 /* Frameworks */,
+				DA239493230BD946007D4F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA239497230BD946007D4F38 /* PBXTargetDependency */,
+			);
+			name = WiFiTransferUITests;
+			productName = WiFiTransferUITests;
+			productReference = DA239495230BD946007D4F38 /* WiFiTransferUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA23946E230BD945007D4F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = zhouqi;
+				TargetAttributes = {
+					DA239475230BD945007D4F38 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					DA239489230BD946007D4F38 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DA239475230BD945007D4F38;
+					};
+					DA239494230BD946007D4F38 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DA239475230BD945007D4F38;
+					};
+				};
+			};
+			buildConfigurationList = DA239471230BD945007D4F38 /* Build configuration list for PBXProject "WiFiTransfer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA23946D230BD945007D4F38;
+			productRefGroup = DA239477230BD945007D4F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA239475230BD945007D4F38 /* WiFiTransfer */,
+				DA239489230BD946007D4F38 /* WiFiTransferTests */,
+				DA239494230BD946007D4F38 /* WiFiTransferUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA239474230BD945007D4F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA239484230BD946007D4F38 /* LaunchScreen.storyboard in Resources */,
+				DA23951F230BDF36007D4F38 /* GCDWebUploader.bundle in Resources */,
+				DA239481230BD946007D4F38 /* Assets.xcassets in Resources */,
+				DA23947F230BD945007D4F38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239488230BD946007D4F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239493230BD946007D4F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA239472230BD945007D4F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23951E230BDF36007D4F38 /* GCDWebServerFileRequest.m in Sources */,
+				DA23951A230BDF36007D4F38 /* GCDWebServerStreamedResponse.m in Sources */,
+				DA23951C230BDF36007D4F38 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				DA23951D230BDF36007D4F38 /* GCDWebServerDataRequest.m in Sources */,
+				DA239519230BDF36007D4F38 /* GCDWebServerDataResponse.m in Sources */,
+				DA239515230BDF36007D4F38 /* GCDWebServer.m in Sources */,
+				DA23951B230BDF36007D4F38 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				DA239511230BDF36007D4F38 /* GCDWebDAVServer.m in Sources */,
+				DA23947C230BD945007D4F38 /* ViewController.swift in Sources */,
+				DA239514230BDF36007D4F38 /* GCDWebServerFunctions.m in Sources */,
+				DA239520230BDF36007D4F38 /* GCDWebUploader.m in Sources */,
+				DA23947A230BD945007D4F38 /* AppDelegate.swift in Sources */,
+				DA239512230BDF36007D4F38 /* GCDWebServerResponse.m in Sources */,
+				DA239517230BDF36007D4F38 /* GCDWebServerErrorResponse.m in Sources */,
+				DA239516230BDF36007D4F38 /* GCDWebServerConnection.m in Sources */,
+				DA239513230BDF36007D4F38 /* GCDWebServerRequest.m in Sources */,
+				DA239518230BDF36007D4F38 /* GCDWebServerFileResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239486230BD946007D4F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23948F230BD946007D4F38 /* WiFiTransferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA239491230BD946007D4F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23949A230BD946007D4F38 /* WiFiTransferUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA23948C230BD946007D4F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA239475230BD945007D4F38 /* WiFiTransfer */;
+			targetProxy = DA23948B230BD946007D4F38 /* PBXContainerItemProxy */;
+		};
+		DA239497230BD946007D4F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA239475230BD945007D4F38 /* WiFiTransfer */;
+			targetProxy = DA239496230BD946007D4F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA23947D230BD945007D4F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA23947E230BD945007D4F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA239482230BD946007D4F38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA239483230BD946007D4F38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA23949C230BD946007D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA23949D230BD946007D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA23949F230BD946007D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = WiFiTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransfer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = WiFiTransfer/bridge.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA2394A0230BD946007D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = WiFiTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransfer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = WiFiTransfer/bridge.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA2394A2230BD946007D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				INFOPLIST_FILE = WiFiTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiTransfer.app/WiFiTransfer";
+			};
+			name = Debug;
+		};
+		DA2394A3230BD946007D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				INFOPLIST_FILE = WiFiTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiTransfer.app/WiFiTransfer";
+			};
+			name = Release;
+		};
+		DA2394A5230BD946007D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				INFOPLIST_FILE = WiFiTransferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiTransfer;
+			};
+			name = Debug;
+		};
+		DA2394A6230BD946007D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZH9GURCFU;
+				INFOPLIST_FILE = WiFiTransferUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kofuf.WiFiTransferUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiTransfer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA239471230BD945007D4F38 /* Build configuration list for PBXProject "WiFiTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA23949C230BD946007D4F38 /* Debug */,
+				DA23949D230BD946007D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA23949E230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA23949F230BD946007D4F38 /* Debug */,
+				DA2394A0230BD946007D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2394A1230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2394A2230BD946007D4F38 /* Debug */,
+				DA2394A3230BD946007D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2394A4230BD946007D4F38 /* Build configuration list for PBXNativeTarget "WiFiTransferUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2394A5230BD946007D4F38 /* Debug */,
+				DA2394A6230BD946007D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA23946E230BD945007D4F38 /* Project object */;
+}
